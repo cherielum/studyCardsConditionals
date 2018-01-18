@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flipping Cards</title>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id = "nav">
+        <a class= "active3" href= "https://github.com/cherielum" style ="float: right; margin: 10px"> GitHub </a>
+		<a class= "active2" href= "mailto: cherie.lum2@gmail.com" style ="float: right; margin: 10px">Contact </a>
+		<a class= "active1" href= "http://88-sites.surge.sh/88days-homepage/homepage.html" style ="float: right; margin: 10px" > Home </a>
+        <br /> <br/>
+    </div>
+
+    <div>
+    <h1 id = "header"> Basic Algorithm JS Questions <br /> Helping to Prep for Web Dev Internships </h1>
+    </div>
+
+    <div>
+    <div class = "container1">
+        <div class ="card1">
+            <div class = "front"> Write an if...else statement that: <br />
+                                prints "even" if the number is an even number <br />
+                                prints "odd" if the number is an odd number <br />
+                                (i.e. if the number is 12, what is the formula?)
+            </div>
+            <div class = "back">
+                var number = 12;  <br />
+                if (number % 2 ===0) {  <br />
+                    console.log("even");  <br />
+                } else if (number % 2 === 1) {  <br />
+                    console.log("odd"); <br />
+                }
+
+            </div>
+        </div>
+    </div>
+    <div class = "container2">
+        <div class ="card2">
+            <div class = "front">What will print out? <br />
+                    var money = 100.50; <br />
+                    var price = 100.50;<br />
+                    
+                    if (money > price) {<br />
+                      console.log("You paid extra, here's your change.");<br />
+                    } else if (money === price) {<br />
+                      console.log("You paid the exact amount, have a nice day!");<br />
+                    } else {<br />
+                      console.log("That's not enough, you still owe me money.");<br />
+                    } <br />
+
+            </div>
+            <div class = "back">"You paid the exact amount, have a nice day!" </div>
+        </div>
+    </div>
+    </div>
+    <div>
+    <div class = "container3">
+        <div class ="card3">
+            <div class = "front">Write a series of conditional statements that: <br/>
+
+                        prints "not a group" if musicians is less than or equal to 0 <br/>
+                        prints "solo" if musicians is equal to 1 <br/>
+                        prints "duet" if musicians is equal to 2 <br/>
+                        prints "trio" if musicians is equal to 3 <br/>
+                        prints "quartet" if musicians is equal to 4 <br/>
+                        prints "this is a large group" if musicians is greater than 4  <br/>
+                </div>
+            <div class = "back">
+
+                    var musicians = 0; <br/>
+
+                    if (musicians <= 0) { <br/>
+                        console.log('not a group');
+                    } else if (musicians ===1) {<br/>
+                        console.log("solo");
+                    } else if (musicians ===2) {<br/>
+                        console.log("duet");
+                    } else if (musicians ===3) {<br/>
+                        console.log("trio");
+                    } else if (musicians ===4) {<br/>
+                        console.log("quartet");
+                    } else if (musicians >4 ){<br/>
+                        console.log("this is a large group");
+                    }
+                    
+            </div>
+        </div>
+    </div> 
+    <div class = "container4">
+        <div class ="card4">
+            <div class = "front">
+                    Write a combination of conditional statements that: <br >
+                    sets the value of weapon based on the room and <br >
+                    sets the value of solved to true if the value of room matches the suspect's room. <br />
+
+                    Afterwards, print the following to the console if the mystery was solved:<br />
+
+                    __________ did it in the __________ with the __________! <br />
+
+
+                    Each weapon corresponds to a particular room, so... <br />
+
+                    the poison belongs to the ballroom, <br />
+                    the trophy belongs to the gallery,<br />
+                    the pool stick belongs to the billiards room,<br />
+                    and the knife belongs to the dining room.<br />
+                    And we know that each suspect was located in a specific room at the time of the murder.<br />
+
+                    Mr. Parkes was located in the dining room.<br />
+                    Ms. Van Cleve was located in the gallery.<br />
+                    Mrs. Sparr was located in the billiards room.<br />
+                    Mr. Kalehoff was located in the ballroom.<br />
+            
+            </div>
+            <div class = "back">
+                    var room = "ballroom"; <br />
+                    var suspect = "Mr. Kalehoff"; <br />
+                    
+                    var weapon = ""; <br />
+                    var solved = false; <br />
+                    
+                    if (room === "dining room" && suspect === "Mr. Parkes") {
+                        weapon ="knife";
+                        solved = true; <br />
+                        
+                    } else if (room === "gallery" && suspect === "Ms. Van Cleve") {
+                        weapon = "trophy";
+                        solved = true; <br />
+                    } else if (room ==="billiards room" && suspect == "Mrs. Sparr") {
+                        weapon = "pool stick"; 
+                        solved = true; <br />
+                    } else {
+                        weapon="poison";
+                        solved = true; <br />
+                    }
+                    
+                    if (solved) {
+                        console.log(suspect+" did it in the "+room+" with the "+weapon+"!"); <br />
+                    }
+                    
+            
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+    <div class = "container5">
+        <div class ="card5">
+            <div class = "front">
+                    What value of [BLANK] would make the following <br /> expression evaluate to false. <br />
+                    !([BLANK] === 4) && "STRing" === "STRing" <br /> <br />
+                  
+                        -4 <br />
+                        4 <br />
+                        "4"<br />
+                        "-4"
+                        <br />
+            </div>
+            <div class = "back">
+                4
+            </div>
+        </div>
+    </div>
+     <div class = "container6">
+        <div class ="card6">
+            <div class = "front">
+                Evaluate the following logical expressions. <br />
+                Which ones evaluate to true? <br />
+
+                true || false <br />
+                false && false <br />
+                !true <br />
+                (13 > -7) || (false == 0)<br />
+                (10 ==='10') && (1<=2) <br />
+                (3 != 6 % 3) && !(24 > 45) && (!false)
+            </div>
+            <div class = "back">
+                true || false <br />
+                (13 > -7) || (false == 0)<br />
+                (3 != 6 % 3) && !(24 > 45) && (!false)
+
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
